@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+  
+.App {
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom right, lightgreen, lightcoral);
+  line-height: 80%; 
+  /* background-image: url(./image/one.jpg), url(./image/two.jpg); 
+   background-size: 180px 100px;
+  background-attachment: scroll;
+  background-position: right, left;
+  background-repeat: no-repeat, no-repeat;
+  background-size:800px 1100px;    */
+}
+
+.heading{
+  font-family: 'Pacifico', cursive;
+  font-style: oblique;
+  font-size: 40px;
+  color: brown;
+  text-decoration: underline;
+  margin: 0%;
+  line-height: 80%; 
+}
+
+.amount{
+  font-size: 20px;
+  text-align: center;
+  align-content: center;
+  color: burlywood;
+  text-overflow: ellipsis;
+}
+
+.dropdown{
+  font-size: 20px;
+  width: fit-content;
+}
+
+.container{
+  display: flex;
+  height: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  line-height: 250%; 
+}
+
+input{
+  padding-left: 50px;
+  font-size: 20px;
+  height: 38px;
+  margin: 0%;
+  line-height: 80%; 
+}
+
+.negative
+{
+  font-size: 1.2rem;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0%;
+  line-height: 80%;
+  padding-right:30px;
+}
+
+.positive{
+  font-size: 1.2rem;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0%;
+  line-height: 80%;
+  padding-left:30px;
+}
+
+.middle{
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  padding-right: 200px;
+}
+
+.right{
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 200px;
+  
+}
+
+.switch{
+  padding: 10px;
+  background-color: yellow;
+  border-radius: 100%;
+  line-height: 80%; 
+  cursor: pointer;
+  color: black;
+}
+
+.button{
+  background-color: #4CAF50;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration:none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  border: none;
+  outline: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
+p{
+  color: blueviolet; 
+  font-size: 40px;
+  font-style: italic;
+  margin-left: 5rem;
+}
+
+h2{
+  font-size: 50px;
+  color: black;
+  font-style: italic;
+  line-height: 0%;
+}
+
+h3{
+  font-size: 40px;
+  color: brown;
+  font-style: italic;
+
+}
+
+.Star {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom right, lightgreen, lightcoral);
+}
