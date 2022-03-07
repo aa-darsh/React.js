@@ -10,17 +10,28 @@ function Navbar(){
     
     return(
        <>
-       <div>
-          <NavLink  to="/star">  
-           <button style={{color:"red"}}> Rate Us !</button>
-           </NavLink>
-        
-           <NavLink  to="/">  
-           <button style={{marginLeft:"2rem", color:"blue"}}> Back !</button>
-           </NavLink>
+       
+      <div className="menu_style">
 
-        
-       </div>
+     <NavLink  to="/">  
+     <button style={{marginLeft:"2rem", color:"blue"}}> Home !</button>
+     </NavLink>
+
+    <NavLink  to="/star">  
+    <button style={{color:"red"}}> Rate Us !</button>
+    </NavLink>
+
+    <NavLink  to= "/contact">  
+    <button style={{marginLeft:"2rem", color:"Green"}}> Contact Us !</button>
+    </NavLink>
+
+    <NavLink  to="/about">  
+    <button style={{marginLeft:"2rem", color:"Maroon"}}> About Us !</button>
+    </NavLink>
+
+
+    </div>
+
         
        </>
     );

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
   
 .App {
-  height: 120vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -145,8 +145,10 @@ h3{
 }
 
 .Star {
-  height: 100vh;
+  height: 92vh;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-direction: column;
   background-image: linear-gradient(to bottom right, lightgreen, lightcoral);
 }

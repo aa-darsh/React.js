@@ -10,8 +10,18 @@ function Star() {
      <>
      <div className="Star">
        
-     <div className="Container" style={{margin:"20rem", paddingLeft:"20rem"}}>
-          
+     <div className="Container" style={{margin:"10rem", paddingRight:"5rem"}}>
+     <div className="form">
+       <form>
+         <label>
+           <h2>Name:</h2>
+          <input style={{padding:"10px 10px"}}
+          type="text" 
+          placeholder="Enter Your Name"
+          name="name" />
+         </label>
+        </form>
+       </div>
 
           <ReactStars
               size={40}
