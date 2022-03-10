@@ -112,8 +112,7 @@ useEffect( () => {
         <button
           style={{
             backgroundColor: "lightgreen", font: "2rem", display: "inline-block", boxShadow: "0 5px 10px", fontSize: "16px",
-            margin: "4px 2px", padding: "5px 10px"
-          }}
+            margin: "4px 2px", padding: "5px 10px", cursor:"pointer"}}
           onClick={() => setName(changeName) }
           > Click Me ??
         </button>
@@ -189,7 +188,7 @@ useEffect( () => {
 
       
       <div className="button">
-        <button      
+        <button style={{cursor:"pointer"}}     
           onClick={() => { convert(); } }> Convert 
         </button>
       </div>
