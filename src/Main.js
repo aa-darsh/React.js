@@ -7,7 +7,7 @@ import 'react-dropdown/style.css';
 import React from "react";
 
 import { Link } from "react-router-dom";
-import Converted from "./Name";
+
 import "./App.css"
 // import Star from "./Star"
 // import './App.css';
@@ -17,7 +17,7 @@ function App()
 {
   // Initializing all the state variables 
   const [info, setInfo] = useState([]);
-  const [name, setName] = useState("Hey User ");
+  const [name, setName] = useState("Hey User !");
   const [input, setInput] = useState(0);
   const [from, setFrom] = useState("inr");
   const [to, setTo] = useState("usd");
@@ -45,17 +45,17 @@ useEffect( () => {
   }
 });
 
-  // const changeName =() =>
-  //  {
-  //   let val= name;
+  const changeName =() =>
+   {
+    let val= name;
 
-  //   if (val==="Hey User !") {
-  //     setName("Nice To meet you !!")
-  //   }else {
-  //     setName("Hey User !")
-  //   }
+    if (val==="Hey User !") {
+      setName("Nice To meet you !!")
+    }else {
+      setName("Hey User !")
+    }
     
-  // }
+  }
    
   // Calling the api whenever the dependency changes
   useEffect(() => {
@@ -106,18 +106,20 @@ useEffect( () => {
       
        
        <h3>{name}</h3>
-        <Link to="/name">  
+
+      </div>
+        <div>
         <button
           style={{
             backgroundColor: "lightgreen", font: "2rem", display: "inline-block", boxShadow: "0 5px 10px", fontSize: "16px",
             margin: "4px 2px", padding: "5px 10px"
           }}
+          onClick={() => setName(changeName) }
           > Click Me ??
         </button>
-        </Link>
-        
-        
-      </div>
+        </div>
+  
+    
 
       <div className="amount">
         <h2> Enter Amount </h2>
@@ -191,26 +193,19 @@ useEffect( () => {
           onClick={() => { convert(); } }> Convert 
         </button>
       </div>
-      
 
-     
+      <h3>Converted Amount:</h3>
 
-      <div>
-        <h3>Converted Amount:</h3>
-        <p>  
-           {input + " " + from + " = " + output.toFixed(2) + " " + to} 
-                <Link to="/star">
-                    <button style={{marginLeft:"2rem", color:"White",
+      <div style={{fontSize:"2.5rem", fontStyle:"Italic"}}>
+        {input + " " + from + " = " + output.toFixed(2) + " " + to}    
+                  <Link to="/star">
+                    <button style={{marginLeft:"1rem", color:"White",
                                    backgroundColor:"Red",cursor:"pointer",
                                    padding:"6px 7px;", fontSize:"1.3rem"}}> Submit
                      </button> 
-                  </Link>
-                       
-        </p>
+                  </Link>     
       </div>
-    
-      
-    </div>
+  </div>
     
 
  ); 

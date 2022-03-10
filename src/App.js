@@ -7,7 +7,7 @@ import Main from "./Main";
 import Navbar from "./Navbar";
 import Contact from "./Contact";
 import About from "./About";
-import Name from "./Name";
+// import Name from "./Name";
 import {Route,Switch, Link} from "react-router-dom";
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
        <Route exact path="/contact" component={Contact}/>
        <Route exact path="/about" component={About}/>
        <Route  exact path="/navbar" component={Navbar} />
-       <Route exact path="/name" component={Name}/>
+       {/* <Route exact path="/name" component={Name}/> */}
        <Route  component={Error}/>
        
      </Switch>
